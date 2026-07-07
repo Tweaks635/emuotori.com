@@ -36,6 +36,9 @@
             text-align: center;
             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
             z-index: 100;
+            width: max-content;
+            max-width: 90%;
+            box-sizing: border-box;
         }
 
         .disclaimer-top-left {
@@ -67,6 +70,7 @@
             padding: 5px;
             border-radius: 50%;
             line-height: 0;
+            display: inline-block;
         }
 
         .icon-link img {
@@ -125,14 +129,14 @@
 </head>
 <body>
 
-    <img src="emu.jpg" alt="Fullscreen Image" class="fullscreen-bg">
+    <img src="emu.jpg" alt="Fullscreen Image" class="fullscreen-bg" fetchpriority="high">
 
     <div class="icon-container">
-        <a href="https://github.com/Tweaks635/https-emuotori.com-" class="icon-link" target="_blank" title="GitHub">
-            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+        <a href="https://github.com/Tweaks635/https-emuotori.com-" class="icon-link" target="_blank" rel="noopener" title="GitHub">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" loading="lazy">
         </a>
-        <a href="https://discord.gg/3hDsvn4fmk" class="icon-link" target="_blank" title="Discord">
-            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968756.png" alt="Discord">
+        <a href="https://discord.gg/3hDsvn4fmk" class="icon-link" target="_blank" rel="noopener" title="Discord">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968756.png" alt="Discord" loading="lazy">
         </a>
     </div>
 
@@ -145,12 +149,12 @@
     </div>
 
     <div class="disclaimer" id="disclaimerBox">
-        <button class="close-btn" onclick="document.getElementById('disclaimerBox').style.display='none'">&times;</button>
+        <button class="close-btn" type="button" onclick="document.getElementById('disclaimerBox').style.display='none'">&times;</button>
         Disclaimer: This fan-made project is not affiliated with, authorized, maintained, sponsored, or endorsed by SEGA Corporation. All trademarks belong to their respective owners.
     </div>
 
     <div class="disclaimer-right" id="ipDisclaimer">
-        <button class="close-btn" onclick="document.getElementById('ipDisclaimer').style.display='none'">&times;</button>
+        <button class="close-btn" type="button" onclick="document.getElementById('ipDisclaimer').style.display='none'">&times;</button>
         Disclaimer: Emu Otori does <strong>not</strong> actually have your IP address. This is just a spicy internet joke.
     </div>
 
