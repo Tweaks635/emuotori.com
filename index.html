@@ -22,10 +22,56 @@
             display: block;
         }
 
+        .text-box {
+            position: absolute;
+            top: 67%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(255, 255, 255, 0.9);
+            color: #222;
+            padding: 14px 24px;
+            border-radius: 12px;
+            font-size: 67px;
+            font-weight: 600;
+            text-align: center;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+            z-index: 100;
+        }
+
+        .disclaimer-top-left {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: rgba(255, 255, 255, 0.8);
+            padding: 12px 15px;
+            border-radius: 4px;
+            font-size: 11px;
+            max-width: 250px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(3px);
+            z-index: 200;
+        }
+
         .disclaimer {
             position: absolute;
             bottom: 20px;
             left: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: rgba(255, 255, 255, 0.8);
+            padding: 12px 35px 12px 15px;
+            border-radius: 4px;
+            font-size: 13px;
+            max-width: 320px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(3px);
+            transition: opacity 0.3s ease;
+        }
+
+        .disclaimer-right {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
             background-color: rgba(0, 0, 0, 0.5);
             color: rgba(255, 255, 255, 0.8);
             padding: 12px 35px 12px 15px;
@@ -59,9 +105,22 @@
 
     <img src="emu.jpg" alt="Fullscreen Image" class="fullscreen-bg">
 
+    <div class="disclaimer-top-left">
+        This site is 99.99% AI-generated. Sorry about the polar bears—I’m currently fueling the heat death of the universe just to display this silly image.
+    </div>
+
+    <div class="text-box">
+        Emu Otori has ur IP address
+    </div>
+
     <div class="disclaimer" id="disclaimerBox">
         <button class="close-btn" onclick="document.getElementById('disclaimerBox').style.display='none'">&times;</button>
         Disclaimer: This fan-made project is not affiliated with, authorized, maintained, sponsored, or endorsed by SEGA Corporation. All trademarks belong to their respective owners.
+    </div>
+
+    <div class="disclaimer-right" id="ipDisclaimer">
+        <button class="close-btn" onclick="document.getElementById('ipDisclaimer').style.display='none'">&times;</button>
+        Disclaimer: Emu Otori does <strong>not</strong> actually have your IP address. This is just a spicy internet joke.
     </div>
 
 </body>
