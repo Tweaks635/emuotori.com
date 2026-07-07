@@ -53,6 +53,28 @@
             z-index: 200;
         }
 
+        .icon-container {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 200;
+            display: flex;
+            gap: 10px;
+        }
+
+        .icon-link {
+            background: white;
+            padding: 5px;
+            border-radius: 50%;
+            line-height: 0;
+        }
+
+        .icon-link img {
+            width: 32px;
+            height: 32px;
+            display: block;
+        }
+
         .disclaimer {
             position: absolute;
             bottom: 20px;
@@ -104,6 +126,15 @@
 <body>
 
     <img src="emu.jpg" alt="Fullscreen Image" class="fullscreen-bg">
+
+    <div class="icon-container">
+        <a href="https://github.com/Tweaks635/https-emuotori.com-" class="icon-link" target="_blank" title="GitHub">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+        </a>
+        <a href="https://discord.gg/3hDsvn4fmk" class="icon-link" target="_blank" title="Discord">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968756.png" alt="Discord">
+        </a>
+    </div>
 
     <div class="disclaimer-top-left">
         This site is 99.99% AI-generated. Sorry about the polar bears—I’m currently fueling the heat death of the universe just to display this silly image.
